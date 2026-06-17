@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible Logicoin testnet problem
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Never include wallet private keys, personal information or server credentials."
+  - type: input
+    id: version
+    attributes:
+      label: Logicoin version
+      placeholder: "0.12.15.3"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, CPU, GPU and relevant driver versions. Remove personal information.

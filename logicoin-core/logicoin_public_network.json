@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "project": "Logicoin",
+  "coin_name": "Logicoin",
+  "native_symbol": "LOGIC",
+  "network_id": "logicoin-public-testnet-rc1",
+  "network_name": "Logicoin Public Testnet RC1",
+  "release_channel": "public-testnet-rc1",
+  "native_asset": {
+    "enabled": true,
+    "type": "native-coin",
+    "name": "Logicoin",
+    "symbol": "LOGIC",
+    "decimals": 8,
+    "genesis_hash": "e5c3eed677420fe6e8e6e2fe6b28db117ea7bb579cc609f18f371213cffa6410",
+    "rpc_urls": [
+      "http://127.0.0.1:8080"
+    ],
+    "public_seed_nodes": [],
+    "explorer_url": ""
+  },
+  "wrapped_token": {
+    "enabled": false,
+    "type": "wrapped-token",
+    "name": "Wrapped Logicoin",
+    "symbol": "wLOGIC",
+    "standard": "ERC-20",
+    "host_chain": "",
+    "chain_id": null,
+    "contract_address": "",
+    "decimals": 8
+  },
+  "bridge": {
+    "enabled": false,
+    "mode": "lock-native-mint-wrapped",
+    "conversion_ratio": "1:1",
+    "native_custody_address": "",
+    "wrapped_burn_address": "",
+    "minimum_native_confirmations": 20,
+    "minimum_host_chain_confirmations": 20,
+    "operator_model": "multisig-required-before-public",
+    "proof_of_reserve_enabled": false,
+    "emergency_pause_enabled": true
+  },
+  "economics": {
+    "block_reward_logic": 50.0,
+    "target_block_time_seconds": 30.0,
+    "estimated_daily_emission_logic": 144000.0,
+    "estimated_annual_emission_logic": 52560000.0,
+    "maximum_supply_logic": null,
+    "halving_schedule": null,
+    "launch_price_eur": null,
+    "launch_market_cap_eur": null
+  },
+  "status": {
+    "native_public_testnet": true,
+    "native_mainnet": false,
+    "wrapped_token_deployed": false,
+    "bridge_audited": false,
+    "public_trading_enabled": false
+  },
+  "notice": "Public-Testnet-Konfiguration. Testcoins besitzen keinen garantierten Wert. Wrapped Token und Bridge sind noch nicht aktiviert."
+}

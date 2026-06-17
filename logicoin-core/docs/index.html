@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Logicoin Public Testnet">
+  <title>Logicoin | Public Testnet</title>
+  <style>
+    :root { color-scheme: dark; --bg:#08111f; --card:#101d31; --text:#edf4ff; --muted:#9fb0c8; --accent:#5aa7ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,sans-serif; background:linear-gradient(135deg,#08111f,#111f36); color:var(--text); }
+    main { max-width:980px; margin:auto; padding:72px 24px; }
+    .badge { display:inline-block; padding:7px 12px; border:1px solid #315278; border-radius:999px; color:#b9d9ff; }
+    h1 { font-size:clamp(3rem,9vw,6.5rem); margin:20px 0 8px; letter-spacing:-.06em; }
+    h2 { margin-top:42px; }
+    p { color:var(--muted); font-size:1.08rem; line-height:1.7; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:28px; }
+    .card { background:rgba(16,29,49,.88); border:1px solid #233b5a; border-radius:18px; padding:22px; }
+    code { color:#b9d9ff; }
+    a.button { display:inline-block; margin:18px 10px 0 0; padding:12px 17px; border-radius:12px; background:var(--accent); color:#06101e; text-decoration:none; font-weight:700; }
+    a.secondary { background:transparent; border:1px solid #46688f; color:var(--text); }
+    footer { margin-top:64px; color:#71849e; font-size:.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <span class="badge">Public Testnet RC · v0.12.15.3</span>
+  <h1>Logicoin</h1>
+  <p>Experimental proof-of-work blockchain with a native LOGIC coin, signed wallets, dynamic difficulty, peer synchronization, a block explorer and NVIDIA CUDA mining.</p>
+  <a class="button" href="../releases/latest">Download latest release</a>
+  <a class="button secondary" href="../">View source</a>
+
+  <div class="grid">
+    <div class="card"><h2>Native coin</h2><p>LOGIC runs directly on the Logicoin blockchain.</p></div>
+    <div class="card"><h2>Public testnet</h2><p>Network ID: <code>logicoin-public-testnet-rc1</code></p></div>
+    <div class="card"><h2>Mining</h2><p>CPU and NVIDIA CUDA mining with multi-GPU support.</p></div>
+    <div class="card"><h2>Security status</h2><p>Experimental and not independently audited. Testnet coins have no guaranteed value.</p></div>
+  </div>
+
+  <h2>Important notice</h2>
+  <p>This release is for testing. The chain, balances and network rules may change before a future mainnet. Never share wallet private keys.</p>
+
+  <footer>Logicoin Project · Neutral project identity · No investment promises</footer>
+</main>
+</body>
+</html>

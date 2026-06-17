@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Builds
+build/
+dist/
+release/
+*.exe
+*.dll
+*.pdb
+*.obj
+*.lib
+*.exp
+
+# Runtime and private data
+logic_wallet.json
+logicoin_node_identity.json
+logicoin_peer_status.json
+logicoin_gpu_submit.lock
+logicoin_control_center_settings.json
+logicoin_gpu_miner_stats*.json
+logicoin_cpu_miner_stats*.json
+logicoin_gpu_benchmark_results*.json
+*.log
+backups/
+diagnostics/
+
+# Local development
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

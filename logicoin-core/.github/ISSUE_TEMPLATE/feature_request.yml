@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an improvement for Logicoin
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Expected benefit
+    validations:
+      required: true
+  - type: textarea
+    id: consensus
+    attributes:
+      label: Consensus impact
+      description: Does this change block validation, mining, rewards or network compatibility?

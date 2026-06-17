@@ -1,0 +1,15 @@
+JETZT TESTEN – v0.12.15.3
+
+1. CHECK_PUBLIC_NETWORK_JSON.bat starten.
+2. Erwartet:
+   [OK] JSON-Struktur ist gültig.
+3. Warnungen zu fehlendem Seed-Node, Max Supply und Halving sind aktuell normal.
+4. Node starten.
+5. Im Browser öffnen:
+   http://127.0.0.1:8080/asset_registry
+6. Prüfen:
+   - network_id = logicoin-public-testnet-rc1
+   - native_symbol = LOGIC
+   - wrapped_token.enabled = false
+   - bridge.enabled = false
+7. CUDA-Worker wie bisher neu bauen und testen.

@@ -1,0 +1,8 @@
+PUBLIC TESTNET HINWEIS
+
+Logicoin / LOGIC v0.12.15.3 ist ein Testnetz.
+Testcoins haben keinen garantierten Geldwert.
+Ein späterer Chain-Reset ist möglich.
+
+Diese Version ist nicht als Mainnet, Investmentprodukt oder Börsenlisting
+freigegeben.

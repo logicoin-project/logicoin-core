@@ -1,0 +1,55 @@
+Logicoin – eigener Node-/Server-PC
+=================================
+
+Für ein stabiles Testnet ist ein separater, dauerhaft laufender Node-PC
+sinnvoll. Er erhöht nicht direkt die GPU-Hashrate, sorgt aber für:
+
+- einen immer erreichbaren zentralen Node
+- weniger Last und Neustarts auf den Mining-PCs
+- stabilere Peer-Synchronisation
+- zentrale Chain-, Wallet- und Log-Backups
+- einen festen LAN-Endpunkt für alle Miner
+
+Empfohlene Aufteilung
+---------------------
+Node-PC:
+- Logicoin Node und später Block Explorer
+- per LAN-Kabel am Router
+- rund um die Uhr eingeschaltet
+- keine Mining-GPU erforderlich
+
+Mining-PCs:
+- nur GPU-/CPU-Miner
+- verbinden sich mit der LAN-IP des Node-PCs
+
+Wichtige Hardware des Node-PCs
+------------------------------
+1. Zuverlässige SSD
+   Mindestens 128–256 GB. SSD ist wichtiger als eine starke GPU.
+
+2. Stabiler Prozessor
+   4 Kerne reichen für das aktuelle Testnet. Ein i5-10400F ist bereits mehr
+   als ausreichend. Für einen sparsamen Dauer-Node reicht auch eine moderne
+   Low-Power-CPU.
+
+3. Arbeitsspeicher
+   8 GB reichen aktuell; 16 GB sind für Explorer, Logs und spätere Dienste
+   angenehmer.
+
+4. Netzwerk
+   Gigabit-LAN statt WLAN, feste lokale IP oder DHCP-Reservierung.
+
+5. Strom und Zuverlässigkeit
+   Gutes Netzteil, automatische Neustartoption nach Stromausfall und optional
+   eine kleine USV.
+
+6. Datensicherung
+   Chain, Config und besonders Wallet-Dateien regelmäßig auf ein zweites
+   Laufwerk oder einen verschlüsselten Datenträger sichern.
+
+Für ein öffentliches Internet-Testnet
+-------------------------------------
+Später ist zusätzlich ein externer Seed-Node/VPS sinnvoll. Der Heim-Node kann
+der Hauptnode bleiben, der öffentliche Seed-Node hilft neuen Nutzern beim
+Peer-Finden. Private Keys und Treasury-Wallet sollten nicht unverschlüsselt
+auf einem öffentlichen Server liegen.

@@ -1,0 +1,22 @@
+Logicoin v0.12.15.3 – Node Asset Registry Startup Hotfix
+========================================================
+
+Behoben:
+- logicoin_public_network.json wird beim EXE-Build nach dist kopiert.
+- Die JSON wird zusätzlich in Control Center und Standalone Node eingebettet.
+- Fehlt die externe Datei trotzdem, nutzt der Node eine sichere interne
+  Fallback-Registry.
+- Wrapped Token und Bridge bleiben im Fallback deaktiviert.
+- Bei einem nicht antwortenden /info-Endpunkt zeigt die App jetzt die letzte
+  Node-Log-Ausgabe direkt im Fehlerfenster.
+
+Ursache in v0.12.15.1:
+Der Node importierte die neue öffentliche Asset-Registry. Der Builder kopierte
+logicoin_public_network.json jedoch nicht nach dist. Der Prozess konnte laufen,
+aber /info brach beim Laden der fehlenden Datei ab.
+
+Schneller Workaround für v0.12.15.1:
+logicoin_public_network.json neben LogicoinControlCenter.exe kopieren.
+
+Empfohlen:
+v0.12.15.3 in einen neuen Ordner entpacken und beide Build-Skripte neu starten.

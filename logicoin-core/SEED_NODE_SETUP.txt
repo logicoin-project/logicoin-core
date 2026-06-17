@@ -1,0 +1,25 @@
+ÖFFENTLICHEN SEED-NODE EINRICHTEN
+
+Ein Seed-Node ist der erste öffentlich erreichbare Logicoin-Node, über den
+neue Tester weitere Peers finden.
+
+Voraussetzungen:
+- PC oder VPS läuft möglichst dauerhaft
+- feste öffentliche IP oder Domain
+- TCP-Port 8080 im Router und in der Firewall freigegeben
+- Node v0.12.15.3
+- keine wichtige Wallet auf dem öffentlichen Server
+
+In logicoin_config.json:
+
+"seed_nodes": [
+  "http://DEINE-DOMAIN-ODER-IP:8080"
+]
+
+Für Tester muss dieselbe Adresse in deren Release-Config stehen.
+
+Vor Veröffentlichung prüfen:
+1. Node von einem anderen Internetanschluss über /info erreichen.
+2. network_id muss logicoin-public-testnet-rc1 sein.
+3. network_fingerprint muss bei allen Nodes gleich sein.
+4. Wallet-Dateien dürfen nicht im Server-Download enthalten sein.

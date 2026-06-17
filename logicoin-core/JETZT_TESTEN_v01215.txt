@@ -1,0 +1,22 @@
+JETZT TESTEN – Logicoin v0.12.15.3 Public Testnet RC1
+
+1. In einen neuen Ordner entpacken.
+2. Keine alte Chain oder alte Wallet übernehmen.
+3. BUILD_LOGICOIN_APP_EXE.bat ausführen.
+4. BUILD_CUDA_WORKER_SAFE.bat ausführen.
+5. CHECK_PUBLIC_TESTNET_READINESS.bat ausführen.
+6. Control Center starten.
+7. Automatisch erstellte Wallet sofort sichern.
+8. Node starten und Netzwerk-ID prüfen:
+   logicoin-public-testnet-rc1
+9. Erst eine GPU starten.
+10. Danach Multi-GPU, Transaktion, Neustart und Peer-Sync testen.
+
+Erwartet:
+- neue Genesis
+- signierte Wallet
+- Invalid = 0
+- Chain bleibt nach Neustart gültig
+- Wallet-Backup kann wiederhergestellt werden
+- Diagnoseexport enthält keinen Private Key
+- ohne Seed-Node erscheint nur eine Warnung

@@ -1,0 +1,28 @@
+[
+  {
+    "index": 0,
+    "timestamp": 0,
+    "project": "Logicoin",
+    "coin": "LOGIC",
+    "ticker": "LOGIC",
+    "network_id": "logicoin-public-testnet-rc1",
+    "network_name": "Logicoin Public Testnet RC1",
+    "release_channel": "public-testnet-rc1",
+    "algorithm": "LogicHash-v0-CPU-Test",
+    "miner_address": "genesis",
+    "reward": 0.0,
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "difficulty": 0,
+    "nonce": 0,
+    "mining_time_seconds": 0.0,
+    "hashrate_hs": 0.0,
+    "transactions": [
+      {
+        "type": "genesis",
+        "network_id": "logicoin-public-testnet-rc1",
+        "message": "Logicoin / LOGIC Public Testnet RC1. Testcoins besitzen keinen garantierten Wert."
+      }
+    ],
+    "hash": "e5c3eed677420fe6e8e6e2fe6b28db117ea7bb579cc609f18f371213cffa6410"
+  }
+]
